@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: Bebas Neue
+Author: Fontfabric
+Url: http://www.fontsquirrel.com/fonts/bebas-neue
+
+Font: Caviar Dreams
+Author: Nymphont
+Url: http://www.fontsquirrel.com/fonts/caviar-dreams

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "6183706585",
+    "firebase_url": "https://cbmm-a23c0.firebaseio.com",
+    "project_id": "cbmm-a23c0",
+    "storage_bucket": "cbmm-a23c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:6183706585:android:106601446a144d6abe83c8",
+        "android_client_info": {
+          "package_name": "com.example.cbmm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "6183706585-ac3jh21th15grj3pdl6d9cjk0sp5f675.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cbmm",
+            "certificate_hash": "be82b3337f54703f64ae6b6d2d6b3fe1b893b792"
+          }
+        },
+        {
+          "client_id": "6183706585-rg9u0env8p62g6ka6ha58qbtlm80jhhr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3ZqHXqANXzzBjExmwQ9rJMTcKD1h1E6E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "6183706585-rg9u0env8p62g6ka6ha58qbtlm80jhhr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

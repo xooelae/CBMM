@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment">
+
+
+    <ImageView
+        android:id="@+id/login_page_logo"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cbmm_logo"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-12dp"
+        />
+    <TextView
+        android:id="@+id/skip_login_page_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/login_page_logo"
+        android:text="SKIP"
+        android:gravity="right"
+        android:layout_marginRight="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#c7c7c7" />
+    <TextView
+        android:id="@+id/signin_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_page_logo"
+        android:text="Sign in"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/black"
+        />
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/login_id_box"
+        android:text="forgot password?"
+        android:textSize="15sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="1dp"
+        android:gravity="right"
+        android:textColor="@android:color/black"
+        />
+
+    <EditText
+        android:id="@+id/login_id_box"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/signin_text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/login_input_box_design"
+        android:layout_marginTop="10dp"
+        android:hint="Email/Phone/User name"
+        android:inputType="text"
+        android:layout_centerInParent="true"
+        android:padding="10dp"/>
+    <EditText
+        android:id="@+id/login_password_box"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/login_id_box"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/login_input_box_design"
+        android:layout_marginTop="-1dp"
+        android:inputType="textPassword"
+        android:layout_centerInParent="true"
+        android:hint="Password"
+        android:padding="10dp"/>
+    <TextView
+        android:id="@+id/seller_login_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_password_box"
+        android:text="I'm a seller?"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="3dp"
+        android:textColor="#FF872C"
+        android:textSize="15sp"
+        android:gravity="right"/>
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/login_progress_bar"
+        style="@style/SpinKitView.Pulse"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/seller_login_text"
+        app:SpinKit_Color="@color/colorPrimary"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/signin_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/login_progress_bar"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:background="@drawable/buttons"
+        android:text="Sign in"
+        android:textColor="#50FF872C"
+        android:textSize="20sp"
+        android:enabled="false"
+        android:textStyle="bold"
+        android:textAllCaps="false"/>
+    <RelativeLayout
+        android:id="@+id/horizontal_line_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/signin_button">
+
+        <TextView
+
+            android:id="@+id/tvText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Need account?"
+            android:textColor="#000000"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@id/tvText1"
+            android:background="#707070"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/tvText1"
+            android:background="#707070"
+            />
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/create_new_account_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/horizontal_line_1"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@drawable/buttons"
+        android:text="Create a new Account"
+        android:textColor="#FF872C"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/privacy_policy_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/create_new_account_button"
+        android:text="By continuing, you agree to CBMM's
+Condition of Use and Privacy Notice."
+        android:textSize="14sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        />
+
+    <RelativeLayout
+        android:id="@+id/horizontal_line_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/privacy_policy_text">
+
+        <TextView
+            android:id="@+id/tvText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="or login with"
+            android:textColor="#000000"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@id/tvText2"
+            android:background="#707070"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/tvText2"
+            android:background="#707070"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_lyout_social_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/horizontal_line_2"
+        android:gravity="center"
+
+        >
+
+
+        <Button
+            android:id="@+id/login_with_google_button"
+            android:layout_width="178dp"
+            android:layout_height="45dp"
+            android:text="Google"
+            android:background="@drawable/google_login_button"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:padding="10dp"/>
+        <Button
+            android:id="@+id/login_with_facebook_button"
+            android:layout_width="178dp"
+            android:layout_height="45dp"
+            android:text="Facebook"
+            android:textAllCaps="false"
+            android:background="@drawable/facebook_login_button"
+            android:textColor="@android:color/white"
+            android:padding="10dp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="© 2020 cbmm.com.bd"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true" />
+
+
+</RelativeLayout>

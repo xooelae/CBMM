@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/product_details_only_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:id="@+id/product_details_only_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#F4EDE7"
+        android:padding="16dp"
+        android:text="PRODUCT DETAILS"
+        android:textColor="#656565"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/product_details_only_body"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="These t-shirts are a nice thick cotton but still very breathable. The sizing on the shirt was exactly as expected. My husband is 5'8 and weighs roughly 180 pounds. He doesn't like tight fitting shirts and he normally wears a size large. The large size in this shirt fits him perfectly and even has a little more length to it than most shirts we find which we loved because my husband has a slightly longer torso and hates when his shirts ride up when he's working on things, so having that extra inch or so in length makes all the difference!
+
+    The shirt also offers exceptional color options. We purchased the navy blue color and it is very vibrant in person. The shirt itself looks exceptionally well made and durable. This shirt is truly a great work shirt that you can wear all year round for a multitude of occassions. Again, they are a nice thick cotton and not a thin shirt and is so insanely comfortable. We've washed it a few times now and it's held up beautifully and hardly shrank if at all!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_details_only_title"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

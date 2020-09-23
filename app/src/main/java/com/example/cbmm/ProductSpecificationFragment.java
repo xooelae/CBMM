@@ -38,12 +38,20 @@ public class ProductSpecificationFragment extends Fragment {
         productSpecificationRecyclerView.setLayoutManager(linearLayoutManager);
 
         List<ProductSpecificationModel> productSpecificationModelList = new ArrayList<>();
+        productSpecificationModelList.add(new ProductSpecificationModel(0,"General"));
+        productSpecificationModelList.add(new ProductSpecificationModel(1,"Color","White,Black,Red"));
+        productSpecificationModelList.add(new ProductSpecificationModel(1,"Color","White,Black,Red"));
+        productSpecificationModelList.add(new ProductSpecificationModel(1,"Color","White,Black,Red"));
+        productSpecificationModelList.add(new ProductSpecificationModel(1,"Color","White,Black,Red"));
+        productSpecificationModelList.add(new ProductSpecificationModel(1,"Color","White,Black,Red"));
+        productSpecificationModelList.add(new ProductSpecificationModel(0,"Body"));
+        productSpecificationModelList.add(new ProductSpecificationModel(1,"Color","White,Black,Red"));
+        productSpecificationModelList.add(new ProductSpecificationModel(1,"Color","White,Black,Red"));
+        productSpecificationModelList.add(new ProductSpecificationModel(1,"Color","White,Black,Red"));
+        productSpecificationModelList.add(new ProductSpecificationModel(1,"Color","White,Black,Red"));
+        productSpecificationModelList.add(new ProductSpecificationModel(1,"Color","White,Black,Red"));
 
-        productSpecificationModelList.add(new ProductSpecificationModel("Color","White,Black,Red"));
-        productSpecificationModelList.add(new ProductSpecificationModel("Material","Cotton"));
-        productSpecificationModelList.add(new ProductSpecificationModel("Buttons","High"));
-        productSpecificationModelList.add(new ProductSpecificationModel("Sleeve","Long"));
-        productSpecificationModelList.add(new ProductSpecificationModel("Brand","Marcado"));
+
 
         ProductSpecificationAdapter productSpecificationAdapter = new ProductSpecificationAdapter(productSpecificationModelList);
         productSpecificationRecyclerView.setAdapter(productSpecificationAdapter);

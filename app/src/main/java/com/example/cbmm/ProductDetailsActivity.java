@@ -3,10 +3,13 @@ package com.example.cbmm;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Context;
+import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -22,6 +25,11 @@ public class ProductDetailsActivity extends AppCompatActivity {
 
     private ViewPager productDetailsViewPager;
     private TabLayout productDetailsTabLayout;
+
+
+    ////////////////////Rating Layout
+    private LinearLayout rateNowContainer;
+    ////////////////////Rating Layout
 
     private static boolean ALREADY_ADDED_TO_FAVORITE = false;
 
@@ -97,6 +105,31 @@ public class ProductDetailsActivity extends AppCompatActivity {
             }
         });
 
+        //////////////////////Rating Layout
+        rateNowContainer = findViewById(R.id.rate_now_container);
 
+        for(int x=0; x< rateNowContainer.getChildCount();x++){
+            final int starPosition = x;
+            rateNowContainer.getChildAt(x).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    setRating(starPosition);
+                }
+            });
+
+        }
+        //////////////////////Rating Layout
+
+
+    }
+
+    private void setRating(int starPosition) {
+        for (int x=0; x<rateNowContainer.getChildCount(); x++){
+            ImageView starButton = (ImageView) rateNowContainer.getChildAt(x);
+            starButton.setImageTintList(ColorStateList.valueOf(Color.parseColor("#BABABA")));
+            if (x<= starPosition){
+                starButton.setImageTintList(ColorStateList.valueOf(Color.parseColor("#f56a00")));
+            }
+        }
     }
 }

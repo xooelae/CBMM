@@ -13,6 +13,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:tabTextColor="#656565"
+        android:background="#F4EDE7"
         app:tabSelectedTextColor="@color/colorPrimary"
         app:tabIndicatorColor="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"

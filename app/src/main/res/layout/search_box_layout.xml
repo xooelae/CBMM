@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/drawer_profile_button"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/search_box"
+        android:layout_alignParentTop="true"
+
+
+        android:layout_marginStart="5dp"
+        android:src="@drawable/face"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/search_box"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/search_box" />
+
+    <EditText
+        android:id="@+id/search_box"
+        android:layout_width="0dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/search_box"
+        android:hint="Search here..."
+        android:padding="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/drawer_profile_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="80dp"
+        android:layout_height="33dp"
+        android:background="@drawable/round_button_gradient_background"
+        android:padding="5dp"
+        android:text="Find"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/search_box"
+        app:layout_constraintEnd_toEndOf="@+id/search_box"
+        app:layout_constraintTop_toTopOf="@+id/search_box" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
